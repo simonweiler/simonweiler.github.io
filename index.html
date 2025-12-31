@@ -5,16 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Simon Weiler | Neuroscientist</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* This ensures smooth scrolling when clicking nav links */
+        html { scroll-behavior: smooth; }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-800 leading-relaxed">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-bold text-blue-900">Dr. Simon Weiler</span>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="#research" class="hover:text-blue-600 transition">Research</a>
+                <a href="#publications" class="hover:text-blue-600 transition">Publications</a>
+                <a href="#gallery" class="hover:text-blue-600 transition">Gallery</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                <a href="#teaching" class="hover:text-blue-600 transition">Teaching</a>
+            </div>
+        </div>
+    </nav>
 
     <div class="max-w-5xl mx-auto px-6 py-12 flex flex-col md:flex-row gap-12">
         
         <aside class="md:w-1/3">
-            <div class="sticky top-8">
-                <img src="me.PNG" alt="Profile Photo" class="rounded-xl shadow-md mb-6 w-full">
-                <h1 class="text-3xl font-bold text-blue-800">Dr. Simon Weiler
-                <p class="text-lg text-gray-300 mb-4">Senior Researcher in Systems Neuroscience</p>
+            <div class="sticky top-24"> <img src="me.PNG" alt="Profile Photo" class="rounded-xl shadow-md mb-6 w-full">
+                <h1 class="text-3xl font-bold text-blue-800">Dr. Simon Weiler</h1>
+                <p class="text-lg text-gray-400 mb-4">Senior Researcher in Systems Neuroscience</p>
                 
                 <div class="space-y-2 text-sm">
                     <p>📍 University College London</p>
@@ -27,12 +43,11 @@
                     <h3 class="font-bold uppercase text-xs tracking-widest text-gray-400 mb-2">Technical Skills</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Two-Photon Imaging</span>
-                           <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Three-Photon Imaging</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Three-Photon Imaging</span>
                         <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Optogenetics</span>
                         <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Neuropixels</span>
                         <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Patch-Clamp</span>
                         <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">MATLAB</span>
-                     
                     </div>
                 </div>
             </div>
@@ -40,146 +55,116 @@
 
         <main class="md:w-2/3">
 
-    <section id="research" class="mb-12">
-        <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-4">Research Interests</h2>
-        <p class="text-gray-700 leading-relaxed mb-4">
-            My research investigates the structural and functional organization of cortical circuits, with a focus on <strong>multimodal sensory intra- and interhemispheric integration.</strong> 
-        </p>
-        <p class="text-gray-700 leading-relaxed">
-            I utilize advanced techniques including <em>in vivo</em> and <em>in vitro</em> recordings, optogenetics, and structural imaging to map the connectivity and logic of the mouse visual and somatosensory systems.
-        </p>
-    </section>
-
-    <section id="publications" class="mb-12">
-        <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-4">Publications</h2>
-        
-        <div class="space-y-8">
-
-             <div class="publication-item border-l-4 border-blue-900 pl-4">
-                <h3 class="font-bold text-gray-900 italic text-lg">Mapping the magnetoreceptive brain: A 3D digital atlas of the migratory bird Eurasian blackcap (Sylvia atricapilla)</h3>
-                <p class="text-sm text-gray-600 mt-1">
-                    Sirmpilatze N, Felder A, Abdulazhanova D, Schwigon L, Haase K ,Musielak I, Margrie TW, Mouritsen H, Heryers D, Tyson AL, <strong>Weiler S</strong>
+            <section id="research" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-4">Research Interests</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    My research investigates the structural and functional organization of cortical circuits, with a focus on <strong>multimodal sensory intra- and interhemispheric integration.</strong> 
                 </p>
-                <p class="text-xs font-semibold text-blue-800 uppercase tracking-tighter">bioRxiv (2025)</p>
-            </div>
-            
-            <div class="publication-item border-l-4 border-gray-200 pl-4">
-                <h3 class="font-bold text-gray-900">Layer 6 corticocortical neurons are a major route for intra- and interhemispheric feedback</h3>
-                <p class="text-sm text-gray-600 mt-1">
-                    <strong>Weiler S</strong>, Teichert M, Margrie TW
+                <p class="text-gray-700 leading-relaxed">
+                    I utilize advanced techniques including <em>in vivo</em> and <em>in vitro</em> recordings, optogenetics, and structural imaging to map the connectivity and logic of the mouse visual and somatosensory systems.
                 </p>
-                <p class="text-xs font-semibold text-blue-800 uppercase tracking-tighter">eLife (2025) 13:RP100478</p>
-            </div>
+            </section>
 
-            <div class="publication-item border-l-4 border-gray-200 pl-4">
-                <h3 class="font-bold text-gray-900">Overcoming off-target optical stimulation-evoked cortical activity in the mouse brain in vivo.</h3>
-                <p class="text-sm text-gray-600 mt-1">
-                    <strong>Weiler S</strong>, Velez-Fort M, Margrie TW
-                </p>
-                <p class="text-xs italic text-gray-500">iScience (2024), 27, 111152</p>
-            </div>
+            <section id="publications" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-4">Publications</h2>
+                
+                <div class="space-y-8">
+                     <div class="publication-item border-l-4 border-blue-900 pl-4">
+                        <h3 class="font-bold text-gray-900 italic text-lg">Mapping the magnetoreceptive brain: A 3D digital atlas of the migratory bird Eurasian blackcap (Sylvia atricapilla)</h3>
+                        <p class="text-sm text-gray-600 mt-1">Sirmpilatze N, Felder A, Abdulazhanova D, Schwigon L, Haase K ,Musielak I, Margrie TW, Mouritsen H, Heryers D, Tyson AL, <strong>Weiler S</strong></p>
+                        <p class="text-xs font-semibold text-blue-800 uppercase tracking-tighter">bioRxiv (2025)</p>
+                    </div>
+                    
+                    <div class="publication-item border-l-4 border-gray-200 pl-4">
+                        <h3 class="font-bold text-gray-900">Layer 6 corticocortical neurons are a major route for intra- and interhemispheric feedback</h3>
+                        <p class="text-sm text-gray-600 mt-1"><strong>Weiler S</strong>, Teichert M, Margrie TW</p>
+                        <p class="text-xs font-semibold text-blue-800 uppercase tracking-tighter">eLife (2025) 13:RP100478</p>
+                    </div>
 
-            <div class="publication-item border-l-4 border-gray-200 pl-4">
-                <h3 class="font-bold text-gray-900">A feedforward-inhibition based cortico-cortical circuit for tactovisual convergence in mouse proximity space.</h3>
-                <p class="text-sm text-gray-600 mt-1">
-                    <strong>Weiler S</strong>, Rahmati V, Isstas M, Wutke J, Stark AW, Zhang Y, Franke C, Graf J, Geis C, Witte OW, Hübener M, Bolz J, Margrie TW, Holthoff K and Teichert M
-                </p>
-                <p class="text-xs italic text-gray-500">Nature Communications (2024) 15, 3081</p>
-            </div>
+                    <div class="publication-item border-l-4 border-gray-200 pl-4">
+                        <h3 class="font-bold text-gray-900">Overcoming off-target optical stimulation-evoked cortical activity in the mouse brain in vivo.</h3>
+                        <p class="text-sm text-gray-600 mt-1"><strong>Weiler S</strong>, Velez-Fort M, Margrie TW</p>
+                        <p class="text-xs italic text-gray-500">iScience (2024), 27, 111152</p>
+                    </div>
 
-            <div class="publication-item border-l-4 border-gray-200 pl-4">
-                <h3 class="font-bold text-gray-900">Stereophotogrammetry with active structured illumination for measuring mouse whiskers in 3D.</h3>
-                <p class="text-sm text-gray-600 mt-1">
-                    Stark AW, Wutke J, <strong>Weiler S</strong>, Witte OW, Holthoff K, Kowarschik R, Teichert M, Franke C
-                </p>
-                <p class="text-xs italic text-gray-500">DGaO-Proceedings (2023) ISSN: 1614-8436</p>
-            </div>
+                    <div class="publication-item border-l-4 border-gray-200 pl-4">
+                        <h3 class="font-bold text-gray-900">A feedforward-inhibition based cortico-cortical circuit for tactovisual convergence in mouse proximity space.</h3>
+                        <p class="text-sm text-gray-600 mt-1"><strong>Weiler S</strong>, Rahmati V, Isstas M, Wutke J, Stark AW, Zhang Y, Franke C, Graf J, Geis C, Witte OW, Hübener M, Bolz J, Margrie TW, Holthoff K and Teichert M</p>
+                        <p class="text-xs italic text-gray-500">Nature Communications (2024) 15, 3081</p>
+                    </div>
 
-            <div class="publication-item border-l-4 border-gray-200 pl-4">
-                <div class="flex items-center gap-2 mb-1">
-                    <h3 class="font-bold text-gray-900">Functional and structural features of L2/3 pyramidal cells continuously covary with pial depth in mouse visual cortex.</h3>
-                    <span class="bg-gray-100 text-gray-600 px-2 py-0.5 rounded text-[10px] font-bold">* Co-first</span>
+                    <div class="publication-item border-l-4 border-gray-200 pl-4">
+                        <h3 class="font-bold text-gray-900">Stereophotogrammetry with active structured illumination for measuring mouse whiskers in 3D.</h3>
+                        <p class="text-sm text-gray-600 mt-1">Stark AW, Wutke J, <strong>Weiler S</strong>, Witte OW, Holthoff K, Kowarschik R, Teichert M, Franke C</p>
+                        <p class="text-xs italic text-gray-500">DGaO-Proceedings (2023) ISSN: 1614-8436</p>
+                    </div>
+
+                    <div class="publication-item border-l-4 border-gray-200 pl-4">
+                        <div class="flex items-center gap-2 mb-1">
+                            <h3 class="font-bold text-gray-900">Functional and structural features of L2/3 pyramidal cells continuously covary with pial depth in mouse visual cortex.</h3>
+                            <span class="bg-gray-100 text-gray-600 px-2 py-0.5 rounded text-[10px] font-bold">* Co-first</span>
+                        </div>
+                        <p class="text-sm text-gray-600"><strong>Weiler S*</strong>, Guggiana Nilo D*, Bonhoeffer T, Hübener M, Rose T and Scheuss V</p>
+                        <p class="text-xs italic text-gray-500">Cerebral Cortex (2022) 33 (7), 3715-3733</p>
+                    </div>
+
+                    <div class="publication-item border-l-4 border-gray-200 pl-4">
+                        <div class="flex items-center gap-2 mb-1">
+                            <h3 class="font-bold text-gray-900">Orientation and direction tuning align with dendritic morphology and spatial connectivity in mouse visual cortex.</h3>
+                            <span class="bg-gray-100 text-gray-600 px-2 py-0.5 rounded text-[10px] font-bold">* Co-first</span>
+                        </div>
+                        <p class="text-sm text-gray-600"><strong>Weiler S*</strong>, Guggiana Nilo D*, Bonhoeffer T, Hübener M, Rose T and Scheuss V</p>
+                        <p class="text-xs italic text-gray-500">Current Biology (2022) 32 (8), 1743-1753</p>
+                    </div>
+
+                    <div class="publication-item border-l-4 border-gray-200 pl-4">
+                        <div class="flex items-center gap-2 mb-1">
+                            <h3 class="font-bold text-gray-900">Limited functional convergence of eye-specific inputs in the retinogeniculate pathway of the mouse.</h3>
+                            <span class="bg-gray-100 text-gray-600 px-2 py-0.5 rounded text-[10px] font-bold">* Co-first</span>
+                        </div>
+                        <p class="text-sm text-gray-600">Bauer J*, <strong>Weiler S*</strong>, Fernholz M.H.P*, Laubender D, Scheuss V, Hübener M, Bonhoeffer T and Rose T</p>
+                        <p class="text-xs italic text-gray-500">Neuron (2021) 109, 1–12</p>
+                    </div>
+
+                    <div class="publication-item border-l-4 border-gray-200 pl-4">
+                        <h3 class="font-bold text-gray-900">High-yield in vitro recordings from neurons functionally characterized in vivo.</h3>
+                        <p class="text-sm text-gray-600 mt-1"><strong>Weiler S</strong>, Bauer J, Hübener M, Bonhoeffer T, Rose T and Scheuss V</p>
+                        <p class="text-xs italic text-gray-500">Nature Protocols (2018) 13, 1275-1293</p>
+                    </div>
+
+                    <div class="publication-item border-l-4 border-gray-200 pl-4">
+                        <h3 class="font-bold text-gray-900">ATP hydrolysis is critically required for function of Cav1.3 channels in cochlear inner hair cells via fueling Ca2+ clearance.</h3>
+                        <p class="text-sm text-gray-600 mt-1"><strong>Weiler S</strong>, Moser T and Pangrsic T</p>
+                        <p class="text-xs italic text-gray-500">Journal of Neuroscience (2014) 34(20): 6843-6848</p>
+                    </div>
+
+                    <div class="publication-item border-l-4 border-gray-200 pl-4">
+                        <h3 class="font-bold text-gray-900">Visual but not trigeminal mediation of magnetic compass information in a migratory bird.</h3>
+                        <p class="text-sm text-gray-600 mt-1">Zapka M, Heyers D, Hein CM, Engels S, Schneider N-L, Hans J, <strong>Weiler S</strong>, Dreyer D, Kishkinev D, Wild JM, Mouritsen H</p>
+                        <p class="text-xs italic text-gray-500">Nature (2009) 461, 1274-1277</p>
+                    </div>
                 </div>
-                <p class="text-sm text-gray-600">
-                    <strong>Weiler S*</strong>, Guggiana Nilo D*, Bonhoeffer T, Hübener M, Rose T and Scheuss V
-                </p>
-                <p class="text-xs italic text-gray-500">Cerebral Cortex (2022) 33 (7), 3715-3733</p>
-            </div>
+            </section>
 
-            <div class="publication-item border-l-4 border-gray-200 pl-4">
-                <div class="flex items-center gap-2 mb-1">
-                    <h3 class="font-bold text-gray-900">Orientation and direction tuning align with dendritic morphology and spatial connectivity in mouse visual cortex.</h3>
-                    <span class="bg-gray-100 text-gray-600 px-2 py-0.5 rounded text-[10px] font-bold">* Co-first</span>
+            <section id="gallery" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-4">Laboratory Imagery</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="group">
+                        <div class="overflow-hidden rounded-lg shadow-sm bg-gray-100 aspect-video">
+                            <img src="L6callosalcells_noncallossal_3pimaging.png" alt="Three-photon imaging" class="object-cover w-full h-full hover:scale-105 transition duration-300">
+                        </div>
+                        <p class="mt-2 text-xs italic text-gray-600">In vivo 3-photon calcium imaging of L6 neurons.</p>
+                    </div>
+                    <div class="group">
+                        <div class="overflow-hidden rounded-lg shadow-sm bg-gray-100 aspect-video">
+                            <img src="calcium_transient_3p.png" alt="Calcium transients" class="object-cover w-full h-full hover:scale-105 transition duration-300">
+                        </div>
+                        <p class="mt-2 text-xs italic text-gray-600">L6 calcium transients.</p>
+                    </div>
                 </div>
-                <p class="text-sm text-gray-600">
-                    <strong>Weiler S*</strong>, Guggiana Nilo D*, Bonhoeffer T, Hübener M, Rose T and Scheuss V
-                </p>
-                <p class="text-xs italic text-gray-500">Current Biology (2022) 32 (8), 1743-1753</p>
-            </div>
+            </section>
 
-            <div class="publication-item border-l-4 border-gray-200 pl-4">
-                <div class="flex items-center gap-2 mb-1">
-                    <h3 class="font-bold text-gray-900">Limited functional convergence of eye-specific inputs in the retinogeniculate pathway of the mouse.</h3>
-                    <span class="bg-gray-100 text-gray-600 px-2 py-0.5 rounded text-[10px] font-bold">* Co-first</span>
-                </div>
-                <p class="text-sm text-gray-600">
-                    Bauer J*, <strong>Weiler S*</strong>, Fernholz M.H.P*, Laubender D, Scheuss V, Hübener M, Bonhoeffer T and Rose T
-                </p>
-                <p class="text-xs italic text-gray-500">Neuron (2021) 109, 1–12</p>
-            </div>
-
-            <div class="publication-item border-l-4 border-gray-200 pl-4">
-                <h3 class="font-bold text-gray-900">High-yield in vitro recordings from neurons functionally characterized in vivo.</h3>
-                <p class="text-sm text-gray-600 mt-1">
-                    <strong>Weiler S</strong>, Bauer J, Hübener M, Bonhoeffer T, Rose T and Scheuss V
-                </p>
-                <p class="text-xs italic text-gray-500">Nature Protocols (2018) 13, 1275-1293</p>
-            </div>
-
-            <div class="publication-item border-l-4 border-gray-200 pl-4">
-                <h3 class="font-bold text-gray-900">ATP hydrolysis is critically required for function of Cav1.3 channels in cochlear inner hair cells via fueling Ca2+ clearance.</h3>
-                <p class="text-sm text-gray-600 mt-1">
-                    <strong>Weiler S</strong>, Moser T and Pangrsic T
-                </p>
-                <p class="text-xs italic text-gray-500">Journal of Neuroscience (2014) 34(20): 6843-6848</p>
-            </div>
-
-            <div class="publication-item border-l-4 border-gray-200 pl-4">
-                <h3 class="font-bold text-gray-900">Visual but not trigeminal mediation of magnetic compass information in a migratory bird.</h3>
-                <p class="text-sm text-gray-600 mt-1">
-                    Zapka M, Heyers D, Hein CM, Engels S, Schneider N-L, Hans J, <strong>Weiler S</strong>, Dreyer D, Kishkinev D, Wild JM, Mouritsen H
-                </p>
-                <p class="text-xs italic text-gray-500">Nature (2009) 461, 1274-1277</p>
-            </div>
-
-        </div>
-    </section>
-
-</main>
-
-        <section id="gallery" class="mb-12">
-    <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-4">Laboratory Imagery</h2>
-    
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        
-        <div class="group">
-            <div class="overflow-hidden rounded-lg shadow-sm bg-gray-100 aspect-video">
-                <img src="L6callosalcells_noncallossal_3pimaging.png" alt="Three-photon imaging of L6 neurons" class="object-cover w-full h-full hover:scale-105 transition duration-300">
-            </div>
-            <p class="mt-2 text-xs italic text-gray-600">In vivo 3-photon calcium imaging of L6 neurons.</p>
-        </div>
-
-        <div class="group">
-            <div class="overflow-hidden rounded-lg shadow-sm bg-gray-100 aspect-video">
-                <img src="calcium_transient_3p.png" alt="Calcium transients" class="object-cover w-full h-full hover:scale-105 transition duration-300">
-            </div>
-            <p class="mt-2 text-xs italic text-gray-600">L6 calcium transients.</p>
-        </div>
-
-    </div>
-</section>
-
-            <section class="mb-12">
+            <section id="projects" class="mb-12 scroll-mt-24">
                 <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-4">Projects</h2>
                 <ul class="list-disc ml-5 space-y-2">
                     <li>Interhemispheric communication at the Sainsbury Wellcome Centre</li>
@@ -188,8 +173,7 @@
                 </ul>
             </section>
 
- 
-<section id="teaching" class="mb-12">
+            <section id="teaching" class="mb-12 scroll-mt-24">
                 <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-4">Teaching</h2>
                 <ul class="list-disc ml-5 space-y-2">
                     <li>UCL Systems and Theoretical Neuroscience Lecture – Synaptic transmission and plasticity</li>
@@ -197,6 +181,7 @@
                     <li>UCL Theoretical and practical course on electrophysiology</li>
                 </ul>
             </section>
-</main>
-</body>
+
+        </main>
+    </div> </body>
 </html>
